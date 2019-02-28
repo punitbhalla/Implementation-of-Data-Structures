@@ -2,10 +2,23 @@ package linkedlist;
 
 public class ListNode {
     int val;
+
+    public ListNode getNext() {
+        return next;
+    }
+
+    public void setNext(ListNode next) {
+        this.next = next;
+    }
+
     ListNode next;
 
-    ListNode(int x) {
+    public ListNode(int x) {
         val = x;
+    }
+
+    public int getVal() {
+        return val;
     }
 
     public static void printList(ListNode node) {
