@@ -4,7 +4,7 @@ public class FindMinCost {
 
     public static int findMinCost(int[][] grid) {
 
-        return findMinCostUtil(grid, 2, 2);
+        return findMinCostUtil(grid, 4, 4);
     }
 
     private static int findMinCostUtil(int[][] grid, int i, int j) {
@@ -31,7 +31,17 @@ public class FindMinCost {
 
 
     public static void main(String[] args) {
-        int[][] grid = new int[][]{{1, 2, 3}, {4, 8, 9}, {1, 5, 3}};
+//        int[][] grid = new int[][]{{1, 2, 3}, {4, 8, 9}, {1, 5, 3}};
+        int[][] grid = new int[][]{{31, 100, 65, 12, 18}, {10, 13, 47, 157, 6}, {100, 113, 174, 11, 33}, {88, 124, 41, 20, 140}, {92, 32, 111, 41, 20}};
         System.out.println(findMinCost(grid));
     }
 }
+
+
+/*
+31, 100, 65, 12, 18,
+10, 13, 47, 157, 6,
+100. 113, 174, 11, 33,
+88, 124, 41, 20, 140,
+99, 32, 111, 41, 20
+ */

@@ -24,7 +24,7 @@ public class SubArraysWithSumK {
     }
 
     public static void main(String[] args) {
-        int[] nums = {1, 1, 1};
+        int[] nums = {1,0,1,0,1};
         System.out.println(subarraySum(nums, 2));
     }
 }

@@ -9,4 +9,13 @@ public class TreeNode {
     TreeNode(int x) {
         val = x;
     }
+
+    public static void inorderTraversal(TreeNode root) {
+        if (root == null) {
+            return;
+        }
+        inorderTraversal(root.left);
+        System.out.print(root.val + " ");
+        inorderTraversal(root.right);
+    }
 }
